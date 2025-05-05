@@ -66,7 +66,7 @@ sniffer:
 
 proxies:
   # جایگزینی با ۲۰ کانفیگ جدید از فایل اول
-  - name: "🇳🇱 ProtonNL #NiREvil نالدویک"
+  - name: "1🇳🇱 ProtonNL #NiREvil نالدویک"
     type: wireguard
     server: 185.177.124.84
     port: 51820
@@ -421,7 +421,7 @@ proxy-groups:
     type: select
     proxies:
       - "🚀 انتخاب خودکار (بهترین)"
-      - "🇳🇱 ProtonNL #NiREvil نالدویک"
+      - "1🇳🇱 ProtonNL #NiREvil نالدویک"
       - "🇳🇱 ProtonNL #NiREvil نالدویک"
       - "☘️Proton🇳🇱NL#31"
       - "Proton🇳🇱NL-#33"
@@ -453,7 +453,7 @@ proxy-groups:
     interval: 600
     tolerance: 100
     proxies:
-      - "🇳🇱 ProtonNL #NiREvil نالدویک"
+      - "1🇳🇱 ProtonNL #NiREvil نالدویک"
       - "🇳🇱 ProtonNL #NiREvil نالدویک"
       - "☘️Proton🇳🇱NL#31"
       - "Proton🇳🇱NL-#33"
