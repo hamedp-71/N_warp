@@ -65,387 +65,531 @@ sniffer:
       ports: [443, 8443, 2053, 2083, 2087, 2096]
 
 proxies:
-  # جایگزینی با ۲۰ کانفیگ جدید از فایل اول
-  - name: "1🇳🇱 ProtonNL #NiREvil نالدویک"
+  - name: "🇳🇱 Netherlands - 1"
     type: wireguard
-    server: 185.177.124.84
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "KH3S8nuY4vlfxzFeUECSkpTNzIpC5b4JNvgthqTE0Fw="
+    server: "185.177.124.84"
+    port: 51820
     public-key: "RGkflpj8nU73t7WgEmZQ45f+wF1QM3fDiKjimp5iCGA="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱 ProtonNL #NiREvil نالدویک"
+  - name: "🇳🇱 Netherlands - 2"
     type: wireguard
-    server: 89.38.99.72
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "MJfUWHaerGBHG5L8r76zrAqJ5YR6IoXtorIo5XnIYmE="
+    server: "89.38.99.72"
+    port: 51820
     public-key: "Wj4jupUpBGVmyMmpME1qw1s2wAxDbygPfz2+ATVGC3c="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "☘️Proton🇳🇱NL#31"
+  - name: "🇳🇱 Netherlands - 3"
     type: wireguard
-    server: 185.177.124.219
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::0:2/128
+    ipv6: "2002:a02:2::0:2/128"
     private-key: "6OTBMExeiXn+ENTgKlgN28KCwRiIsTaGH4ctyBuatWM="
+    server: "185.177.124.219"
+    port: 51820
     public-key: "GqrhIyCiFfxq4hRI46+/Qtevp2D+gqzAIZrMAL/XM="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "Proton🇳🇱NL-#33"
+  - name: "🇳🇱 Netherlands - 4"
     type: wireguard
-    server: 185.177.124.206
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "KNDEguEKXaZgEIjTahL+mS5Wqwqx5lSBRJEr8Ykp4Hw="
+    server: "185.177.124.206"
+    port: 51820
     public-key: "5+Pfgs2q2WVR1/E+wtAtHmts+wVaJCPcqXLEmO/tDD8="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱Proton NL#34"
+  - name: "🇳🇱 Netherlands - 5"
     type: wireguard
-    server: 185.177.125.211
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "8I5BR/E2VZrkBh4Juhl81iRqHAm3jEiUut8cN3rrX1U="
+    server: "185.177.125.211"
+    port: 51820
     public-key: "3U38ZXtMhIdnUe4kQKu196/7Nu8Uq1v1qMtNpifzf1c="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱ProtonNL-#35-ipv6"
+  - name: "🇳🇱 Netherlands - 6"
     type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: "2002:a02:2::2/128"
+    private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
     server: "[2a00:7c80:0:3bd::13]"
     port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
-    private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
     public-key: "jDrSMRMm6XJgYGcSd01QqJbYiW13dyaOKp8GWDs0rTQ="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱proton-NL-#35-185.177.125.178"
+  - name: "🇳🇱 Netherlands - 7"
     type: wireguard
-    server: 185.177.125.178
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
+    server: "185.177.125.178"
+    port: 51820
     public-key: "jDrSMRMm6XJgYGcSd01QqJbYiW13dyaOKp8GWDs0rTQ="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱proton NL-#35-...174"
+  - name: "🇳🇱 Netherlands - 8"
     type: wireguard
-    server: 185.177.125.174
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
+    server: "185.177.125.174"
+    port: 51820
     public-key: "jDrSMRMm6XJgYGcSd01QqJbYiW13dyaOKp8GWDs0rTQ="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱Proton NL-#77-3"
+  - name: "🇳🇱 Netherlands - 9"
     type: wireguard
-    server: 212.8.252.66
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "8I5BR/E2VZrkBh4Juhl81iRqHAm3jEiUut8cN3rrX1U="
+    server: "212.8.252.66"
+    port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱ProtonNL-#77-2"
+  - name: "🇳🇱 Netherlands - 10"
     type: wireguard
-    server: 212.8.252.66
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "iN+i6R0KCHUsu0sDqCEBmLb1t/BVBuGIGXqHV5TWwGk="
+    server: "212.8.252.66"
+    port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱Proton NL-#77-1"
+  - name: "🇳🇱 Netherlands - 11"
     type: wireguard
-    server: 212.8.252.66
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::2/128
+    ipv6: "2002:a02:2::2/128"
     private-key: "AP/N68a5LaDHJbIEzY8N8efHSxli+w9mm5uiMSgXtVg="
+    server: "212.8.252.66"
+    port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱ProtonNL#80"
+  - name: "🇳🇱 Netherlands - 12"
     type: wireguard
-    server: 190.2.155.219
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "eIPOcEARtCrF/sqsD4xKOhSSsRNUWC8VtUKk8Ltu1U4="
+    server: "190.2.155.219"
+    port: 51820
     public-key: "L3UMPbMgB2WUh5Es80e3Jjvu9F5Qh6HYqWeagUAlGgU="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "☘️🇳🇱ProtonNL-#87"
+  - name: "🇳🇱 Netherlands - 13"
     type: wireguard
-    server: 89.38.97.196
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "2CnX80NJL1rJAq5Tf5Y/I0MUZeazm10WcvlCcJ6kU08="
+    server: "89.38.97.196"
+    port: 51820
     public-key: "UnTXCMnNI5QZKT8tQqDtPCHo2e7hbdEyHb9C/C9FsE4="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "☘️🇳🇱ProtonNL-#114"
+  - name: "🇳🇱 Netherlands - 14"
     type: wireguard
-    server: 149.34.244.139
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "ID5uqXlDwXV2VSyXT5Wca3bh5NJ0npGDMe1+RpV7hmo="
+    server: "149.34.244.139"
+    port: 51820
     public-key: "cZqPUUEdnSZVoKckIHHTfvS/lKEG5mslwHiPJsSG1FE="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇳🇱Proton,standامستردامNL-#114/ipv6,v4"
+  - name: "🇳🇱 Netherlands - 15"
     type: wireguard
-    server: 149.34.244.139
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "iIqlMBgP4CjXVF7+7aC8DGjsN8fX2pW33gMn57xzMko="
+    server: "149.34.244.139"
+    port: 51820
     public-key: "cZqPUUEdnSZVoKckIHHTfvS/lKEG5mslwHiPJsSG1FE="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1460
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇺🇸Proton-US#109"
+  - name: "🇺🇸 United States - 16"
     type: wireguard
-    server: 149.22.88.129
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "CAdmgNJHeANSaTctw6lPo19vNR7bvWlYHFrP1vVMpVc="
+    server: "149.22.88.129"
+    port: 51820
     public-key: "0q5TxQQMNVQ6wEcLqnHa20G0DP/fpk8YdgLJUYApfTo="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "☘️🇺🇸ProtonUS-#40/v6/Texas-Houston"
+  - name: "🇺🇸 United States - 17"
     type: wireguard
-    server: 37.19.221.193
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "kBTlRSWFygiYKJRPdLvmrm86XHye8grOpGZusItuB2g="
+    server: "37.19.221.193"
+    port: 51820
     public-key: "WIeBbAgtnBInKKxUYyc9B+R1aqPlJSV5e6mq+xGgymc="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇺🇸Proton US-#108/v6/Seattle-Tacoma WA, واشینگتن"
+  - name: "🇺🇸 United States - 18"
     type: wireguard
-    server: 149.22.88.144
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "uO6DNQuPp/aMicv1Vd7lYVhFQCZ6oT/Y/+0BKcsOlW0="
+    server: "149.22.88.144"
+    port: 51820
     public-key: "4btNnE0wgT8Ago43+/EsNtsUqqnxCZnsUuluZCoW1VY="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "☘️🇺🇸ProtonUS-#77/v4 کالیفرنیا"
+  - name: "🇺🇸 United States - 19"
     type: wireguard
-    server: 149.22.84.144
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "eEt+5Gsx/Ai/xnETRarKzNq16ihPxbF0r+D9sAmCu1k="
+    server: "149.22.84.144"
+    port: 51820
     public-key: "4R1OAr1fQR4ZHNq7T4Gkage3p7LyqMfOyhCqfu04gno="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
-  - name: "🇺🇸ProtonUS-#105/v4 تگزاس"
+  - name: "🇺🇸 United States - 20"
     type: wireguard
-    server: 79.127.147.88
-    port: 51820
     ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
+    ipv6: "2002:a02:2::/128"
     private-key: "EIPasefV14L5rJ9hTY2QTYt5DiTIPfaA5CNtnI9qGXw="
+    server: "79.127.147.88"
+    port: 51820
     public-key: "+nfuVNp0Pevo7gksdbUCpgcNa+oowtZI/m031Ww3Iy0="
-    reserved: [0, 0, 0]
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
     udp: true
     mtu: 1488
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
-    keepalive: 11
-
-  - name: "🇺🇸ProtonUS-#62/v6 شیکاگو"
-    type: wireguard
-    server: 87.249.134.133
-    port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
-    private-key: "4LIk8UbSCKvFS+sUjKYoWDUDZVqOejLBb2+CV3qAyW4="
-    public-key: "3R9vndAPHcVhtB+nshj2FQMNE2+/6LYcWm9NhRC/wjc="
-    reserved: [0, 0, 0]
-    udp: true
-    mtu: 1488
-    dialer-proxy: ""
-    keepalive: 5
-
-  - name: "🇺🇸ProtonUS-#106/v6 میامی-دید، فلوریدا"
-    type: wireguard
-    server: 138.199.50.134
-    port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
-    private-key: "2OxzUep6UjhsvrKIYRE9jMb6drA58Z+rYYKFNqsrymY="
-    public-key: "/iPQhCh0/kEzS60D5ysFOQHSyUAFV9sx77AckhzA9Xw="
-    reserved: [0, 0, 0]
-    udp: true
-    mtu: 1488
-    dialer-proxy: ""
-    keepalive: 5
-
-  - name: "☘️🇯🇵ProtonJP#14/v6 توکیو"
-    type: wireguard
-    server: 138.199.21.198
-    port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
-    private-key: "AJAPL7V48Ux94/MlNBdzrjm5AY1A9o3vnSWOWWZj+VU="
-    public-key: "fdtybgb+Y6FAiUR1/AlJ6vNm4D5MkHLJrvvNwdnNPn8="
-    reserved: [0, 0, 0]
-    udp: true
-    mtu: 1488
-    dialer-proxy: ""
-    keepalive: 5
-
-  - name: "🇯🇵ProtonJP-#7/v6 اَزاکا"
-    type: wireguard
-    server: 45.14.71.7
-    port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
-    private-key: "uEAXHo90zVjCn38FfsV4km+ynHJhZqfznqhn1pYqXEI="
-    public-key: "S4m34Hfczv02IBQV4tmTpd+mHkq3sDrabHv58J1Ikz0="
-    reserved: [0, 0, 0]
-    udp: true
-    mtu: 1488
-    dialer-proxy: ""
-    keepalive: 5
-
-  - name: "🇯🇵ProtonJP-149.88.103.53/v4/توکیو"
-    type: wireguard
-    server: 149.88.103.53
-    port: 51820
-    ip: 10.2.0.2/32
-    ipv6: 2002:a02:2::/128
-    private-key: "KFetZ5MmPzGUjvicOhn3RcuE/Je5FGjSTiMGETX631s="
-    public-key: "iJZK2duVi5TunYnIIDjQwmTvXZK4xzitCx+d09veiAQ="
-    reserved: [0, 0, 0]
-    udp: true
-    mtu: 1460
-    dialer-proxy: ""
-    keepalive: 5
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h3: 3
+      h4: 4
 
 proxy-groups:
   - name: "🌐 گلوبال"
     type: select
     proxies:
       - "🚀 انتخاب خودکار (بهترین)"
-      - "1🇳🇱 ProtonNL #NiREvil نالدویک"
-      - "🇳🇱 ProtonNL #NiREvil نالدویک"
-      - "☘️Proton🇳🇱NL#31"
-      - "Proton🇳🇱NL-#33"
-      - "🇳🇱Proton NL#34"
-      - "🇳🇱ProtonNL-#35-ipv6"
-      - "🇳🇱proton-NL-#35-185.177.125.178"
-      - "🇳🇱proton NL-#35-...174"
-      - "🇳🇱Proton NL-#77-3"
-      - "🇳🇱ProtonNL-#77-2"
-      - "🇳🇱Proton NL-#77-1"
-      - "🇳🇱ProtonNL#80"
-      - "☘️🇳🇱ProtonNL-#87"
-      - "☘️🇳🇱ProtonNL-#114"
-      - "🇳🇱Proton,standامستردامNL-#114/ipv6,v4"
-      - "🇺🇸Proton-US#109"
-      - "☘️🇺🇸ProtonUS-#40/v6/Texas-Houston"
-      - "🇺🇸Proton US-#108/v6/Seattle-Tacoma WA, واشینگتن"
-      - "☘️🇺🇸ProtonUS-#77/v4 کالیفرنیا"
-      - "🇺🇸ProtonUS-#105/v4 تگزاس"
-      - "🇺🇸ProtonUS-#62/v6 شیکاگو"
-      - "🇺🇸ProtonUS-#106/v6 میامی-دید، فلوریدا"
-      - "☘️🇯🇵ProtonJP#14/v6 توکیو"
-      - "🇯🇵ProtonJP-#7/v6 اَزاکا"
-      - "🇯🇵ProtonJP-149.88.103.53/v4/توکیو"
+      - "🇳🇱 Netherlands - 1"
+      - "🇳🇱 Netherlands - 2"
+      - "🇳🇱 Netherlands - 3"
+      - "🇳🇱 Netherlands - 4"
+      - "🇳🇱 Netherlands - 5"
+      - "🇳🇱 Netherlands - 6"
+      - "🇳🇱 Netherlands - 7"
+      - "🇳🇱 Netherlands - 8"
+      - "🇳🇱 Netherlands - 9"
+      - "🇳🇱 Netherlands - 10"
+      - "🇳🇱 Netherlands - 11"
+      - "🇳🇱 Netherlands - 12"
+      - "🇳🇱 Netherlands - 13"
+      - "🇳🇱 Netherlands - 14"
+      - "🇳🇱 Netherlands - 15"
+      - "🇺🇸 United States - 16"
+      - "🇺🇸 United States - 17"
+      - "🇺🇸 United States - 18"
+      - "🇺🇸 United States - 19"
+      - "🇺🇸 United States - 20"
 
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
@@ -453,31 +597,26 @@ proxy-groups:
     interval: 600
     tolerance: 100
     proxies:
-      - "1🇳🇱 ProtonNL #NiREvil نالدویک"
-      - "🇳🇱 ProtonNL #NiREvil نالدویک"
-      - "☘️Proton🇳🇱NL#31"
-      - "Proton🇳🇱NL-#33"
-      - "🇳🇱Proton NL#34"
-      - "🇳🇱ProtonNL-#35-ipv6"
-      - "🇳🇱proton-NL-#35-185.177.125.178"
-      - "🇳🇱proton NL-#35-...174"
-      - "🇳🇱Proton NL-#77-3"
-      - "🇳🇱ProtonNL-#77-2"
-      - "🇳🇱Proton NL-#77-1"
-      - "🇳🇱ProtonNL#80"
-      - "☘️🇳🇱ProtonNL-#87"
-      - "☘️🇳🇱ProtonNL-#114"
-      - "🇳🇱Proton,standامستردامNL-#114/ipv6,v4"
-      - "🇺🇸Proton-US#109"
-      - "☘️🇺🇸ProtonUS-#40/v6/Texas-Houston"
-      - "🇺🇸Proton US-#108/v6/Seattle-Tacoma WA, واشینگتن"
-      - "☘️🇺🇸ProtonUS-#77/v4 کالیفرنیا"
-      - "🇺🇸ProtonUS-#105/v4 تگزاس"
-      - "🇺🇸ProtonUS-#62/v6 شیکاگو"
-      - "🇺🇸ProtonUS-#106/v6 میامی-دید، فلوریدا"
-      - "☘️🇯🇵ProtonJP#14/v6 توکیو"
-      - "🇯🇵ProtonJP-#7/v6 اَزاکا"
-      - "🇯🇵ProtonJP-149.88.103.53/v4/توکیو"
+      - "🇳🇱 Netherlands - 1"
+      - "🇳🇱 Netherlands - 2"
+      - "🇳🇱 Netherlands - 3"
+      - "🇳🇱 Netherlands - 4"
+      - "🇳🇱 Netherlands - 5"
+      - "🇳🇱 Netherlands - 6"
+      - "🇳🇱 Netherlands - 7"
+      - "🇳🇱 Netherlands - 8"
+      - "🇳🇱 Netherlands - 9"
+      - "🇳🇱 Netherlands - 10"
+      - "🇳🇱 Netherlands - 11"
+      - "🇳🇱 Netherlands - 12"
+      - "🇳🇱 Netherlands - 13"
+      - "🇳🇱 Netherlands - 14"
+      - "🇳🇱 Netherlands - 15"
+      - "🇺🇸 United States - 16"
+      - "🇺🇸 United States - 17"
+      - "🇺🇸 United States - 18"
+      - "🇺🇸 United States - 19"
+      - "🇺🇸 United States - 20"
 
 rule-providers:
   ir:
