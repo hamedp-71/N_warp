@@ -47,8 +47,9 @@ tun:
   strict-route: true
   auto-detect-interface: true
   dns-hijack:
-    - 'any:53'
-  mtu: 9000
+  - 'tcp://any:53'
+  - 'udp://any:53'
+  mtu: 1316
 sniffer:
   enable: true
   force-dns-mapping: true
