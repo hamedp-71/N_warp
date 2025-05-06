@@ -8,7 +8,7 @@ keep-alive-idle: 30
 keep-alive-interval: 30
 unified-delay: false
 geo-auto-update: true
-geo-update-interval: 168
+geo-update-interval: 48
 external-controller: '127.0.0.1:9090'
 external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-ui: ui
@@ -65,18 +65,18 @@ sniffer:
       ports: [443, 8443, 2053, 2083, 2087, 2096]
 
 proxies:
-  - name: "🇳🇱 Netherlands - 3"
+  - name: "🇳🇱 Netherlands 1"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::0:2/128"
-    private-key: "6OTBMExeiXn+ENTgKlgN28KCwRiIsTaGH4ctyBuatWM="
-    server: "185.177.124.219"
+    ipv6: 2002:a02:2::/128
+    private-key: "KH3S8nuY4vlfxzFeUECSkpTNzIpC5b4JNvgthqTE0Fw="
+    server: 185.177.124.84
     port: 51820
-    public-key: "GqrhIyCiFfxq4hRI46+/Qtevp2D+gqzAIZrMAL/XM="
-    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.220/24", "!94.232.128.0/21"]
+    public-key: "RGkflpj8nU73t7WgEmZQ45f+wF1QM3fDiKjimp5iCGA="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -87,21 +87,71 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 4"
+  - name: "🇳🇱 Netherlands 2"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::/128
+    private-key: "MJfUWHaerGBHG5L8r76zrAqJ5YR6IoXtorIo5XnIYmE="
+    server: 89.38.99.72
+    port: 51820
+    public-key: "Wj4jupUpBGVmyMmpME1qw1s2wAxDbygPfz2+ATVGC3c="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇳🇱 Netherlands 3"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::0:2/128
+    private-key: "6OTBMExeiXn+ENTgKlgN28KCwRiIsTaGH4ctyBuatWM="
+    server: 185.177.124.219
+    port: 51820
+    public-key: "GqrhIyCiFfxq4hRI46+/Qtevp2D+gqzAIZrMAL//XM="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇳🇱 Netherlands 4"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::2/128
     private-key: "KNDEguEKXaZgEIjTahL+mS5Wqwqx5lSBRJEr8Ykp4Hw="
-    server: "185.177.124.206"
+    server: 185.177.124.206
     port: 51820
     public-key: "5+Pfgs2q2WVR1/E+wtAtHmts+wVaJCPcqXLEmO/tDD8="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -112,21 +162,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 5"
+  - name: "🇳🇱 Netherlands 5"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "8I5BR/E2VZrkBh4Juhl81iRqHAm3jEiUut8cN3rrX1U="
-    server: "185.177.125.211"
+    server: 185.177.125.211
     port: 51820
     public-key: "3U38ZXtMhIdnUe4kQKu196/7Nu8Uq1v1qMtNpifzf1c="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -137,13 +187,13 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 6"
+  - name: "🇳🇱 Netherlands 6 (IPv6)"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
     server: "[2a00:7c80:0:3bd::13]"
     port: 51820
@@ -151,7 +201,7 @@ proxies:
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -162,21 +212,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 7"
+  - name: "🇳🇱 Netherlands 7"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
-    server: "185.177.125.178"
+    server: 185.177.125.178
     port: 51820
     public-key: "jDrSMRMm6XJgYGcSd01QqJbYiW13dyaOKp8GWDs0rTQ="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -187,21 +237,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 8"
+  - name: "🇳🇱 Netherlands 8"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "GFe9WDYTKFdqo9/Vz2sWo5q7n/NPq7czRrgJrcbJmGQ="
-    server: "185.177.125.174"
+    server: 185.177.125.174
     port: 51820
     public-key: "jDrSMRMm6XJgYGcSd01QqJbYiW13dyaOKp8GWDs0rTQ="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -212,21 +262,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 9"
+  - name: "🇳🇱 Netherlands 9"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "8I5BR/E2VZrkBh4Juhl81iRqHAm3jEiUut8cN3rrX1U="
-    server: "212.8.252.66"
+    server: 212.8.252.66
     port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -237,21 +287,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 10"
+  - name: "🇳🇱 Netherlands 10"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "iN+i6R0KCHUsu0sDqCEBmLb1t/BVBuGIGXqHV5TWwGk="
-    server: "212.8.252.66"
+    server: 212.8.252.66
     port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -262,21 +312,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 11"
+  - name: "🇳🇱 Netherlands 11"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::2/128"
+    ipv6: 2002:a02:2::2/128
     private-key: "AP/N68a5LaDHJbIEzY8N8efHSxli+w9mm5uiMSgXtVg="
-    server: "212.8.252.66"
+    server: 212.8.252.66
     port: 51820
     public-key: "oO/Q3E6nFyEE1Nl7QqyCoM009/XZtcM+jlRMGmXIrWc="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -287,21 +337,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 12"
+  - name: "🇳🇱 Netherlands 12"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "eIPOcEARtCrF/sqsD4xKOhSSsRNUWC8VtUKk8Ltu1U4="
-    server: "190.2.155.219"
+    server: 190.2.155.219
     port: 51820
     public-key: "L3UMPbMgB2WUh5Es80e3Jjvu9F5Qh6HYqWeagUAlGgU="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -312,21 +362,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 13"
+  - name: "🇳🇱 Netherlands 13"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "2CnX80NJL1rJAq5Tf5Y/I0MUZeazm10WcvlCcJ6kU08="
-    server: "89.38.97.196"
+    server: 89.38.97.196
     port: 51820
     public-key: "UnTXCMnNI5QZKT8tQqDtPCHo2e7hbdEyHb9C/C9FsE4="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -337,21 +387,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 14"
+  - name: "🇳🇱 Netherlands 14"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "ID5uqXlDwXV2VSyXT5Wca3bh5NJ0npGDMe1+RpV7hmo="
-    server: "149.34.244.139"
+    server: 149.34.244.139
     port: 51820
     public-key: "cZqPUUEdnSZVoKckIHHTfvS/lKEG5mslwHiPJsSG1FE="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -362,21 +412,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇳🇱 Netherlands - 15"
+  - name: "🇳🇱 Netherlands 15"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "iIqlMBgP4CjXVF7+7aC8DGjsN8fX2pW33gMn57xzMko="
-    server: "149.34.244.139"
+    server: 149.34.244.139
     port: 51820
     public-key: "cZqPUUEdnSZVoKckIHHTfvS/lKEG5mslwHiPJsSG1FE="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1460
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -387,21 +437,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇺🇸 United States - 16"
+  - name: "🇺🇸 United States 1"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "CAdmgNJHeANSaTctw6lPo19vNR7bvWlYHFrP1vVMpVc="
-    server: "149.22.88.129"
+    server: 149.22.88.129
     port: 51820
     public-key: "0q5TxQQMNVQ6wEcLqnHa20G0DP/fpk8YdgLJUYApfTo="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -412,21 +462,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇺🇸 United States - 17"
+  - name: "🇺🇸 United States 2"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "kBTlRSWFygiYKJRPdLvmrm86XHye8grOpGZusItuB2g="
-    server: "37.19.221.193"
+    server: 37.19.221.193
     port: 51820
     public-key: "WIeBbAgtnBInKKxUYyc9B+R1aqPlJSV5e6mq+xGgymc="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -437,21 +487,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇺🇸 United States - 18"
+  - name: "🇺🇸 United States 3"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "uO6DNQuPp/aMicv1Vd7lYVhFQCZ6oT/Y/+0BKcsOlW0="
-    server: "149.22.88.144"
+    server: 149.22.88.144
     port: 51820
     public-key: "4btNnE0wgT8Ago43+/EsNtsUqqnxCZnsUuluZCoW1VY="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -462,21 +512,21 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇺🇸 United States - 19"
+  - name: "🇺🇸 United States 4"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "eEt+5Gsx/Ai/xnETRarKzNq16ihPxbF0r+D9sAmCu1k="
-    server: "149.22.84.144"
+    server: 149.22.84.144
     port: 51820
     public-key: "4R1OAr1fQR4ZHNq7T4Gkage3p7LyqMfOyhCqfu04gno="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
@@ -487,21 +537,96 @@ proxies:
       s2: 0
       h1: 1
       h2: 2
-      h3: 3
-      h4: 4
+      h4: 3
+      h3: 4
 
-  - name: "🇺🇸 United States - 20"
+  - name: "🇺🇸 United States 5"
     type: wireguard
     ip: 10.2.0.2/32
-    ipv6: "2002:a02:2::/128"
+    ipv6: 2002:a02:2::/128
     private-key: "EIPasefV14L5rJ9hTY2QTYt5DiTIPfaA5CNtnI9qGXw="
-    server: "79.127.147.88"
+    server: 79.127.147.88
     port: 51820
     public-key: "+nfuVNp0Pevo7gksdbUCpgcNa+oowtZI/m031Ww3Iy0="
     allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
     reserved: "AAAA"
     udp: true
-    mtu: 1488
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇺🇸 United States 6"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::/128
+    private-key: "4LIk8UbSCKvFS+sUjKYoWDUDZVqOejLBb2+CV3qAyW4="
+    server: 87.249.134.133
+    port: 51820
+    public-key: "3R9vndAPHcVhtB+nshj2FQMNE2+/6LYcWm9NhRC/wjc="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇺🇸 United States 7"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::/128
+    private-key: "2OxzUep6UjhsvrKIYRE9jMb6drA58Z+rYYKFNqsrymY="
+    server: 138.199.50.134
+    port: 51820
+    public-key: "/iPQhCh0/kEzS60D5ysFOQHSyUAFV9sx77AckhzA9Xw="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇯🇵 Japan 1"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::/128
+    private-key: "AJAPL7V48Ux94/MlNBdzrjm5AY1A9o3vnSWOWWZj+VU="
+    server: 138.199.21.198
+    port: 51820
+    public-key: "fdtybgb+Y6FAiUR1/AlJ6vNm4D5MkHLJrvvNwdnNPn8="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
     dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
     dialer-proxy: ""
     amnezia-wg-option:
