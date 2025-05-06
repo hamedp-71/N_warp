@@ -640,29 +640,86 @@ proxies:
       h3: 3
       h4: 4
 
+  - name: "🇯🇵 Japan 2"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::/128
+    private-key: "uEAXHo90zVjCn38FfsV4km+ynHJhZqfznqhn1pYqXEI="
+    server: 45.14.71.7
+    port: 51820
+    public-key: "S4m34Hfczv02IBQV4tmTpd+mHkq3sDrabHv58J1Ikz0="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
+  - name: "🇯🇵 Japan 3"
+    type: wireguard
+    ip: 10.2.0.2/32
+    ipv6: 2002:a02:2::/128
+    private-key: "KFetZ5MmPzGUjvicOhn3RcuE/Je5FGjSTiMGETX631s="
+    server: 149.88.103.53
+    port: 51820
+    public-key: "iJZK2duVi5TunYnIIDjQwmTvXZK4xzitCx+d09veiAQ="
+    allowed-ips: ["0.0.0.0/0", "::/0", "10.0.0.0/8", "!185.143.223.0/24", "!94.232.128.0/21"]
+    reserved: "AAAA"
+    udp: true
+    mtu: 1280
+    dns: ["10.2.0.1", "2002:a02:1:0:0:0:0:0"]
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
+
 proxy-groups:
   - name: "🌐 گلوبال"
     type: select
     proxies:
       - "🚀 انتخاب خودکار (بهترین)"
-      - "🇳🇱 Netherlands - 3"
-      - "🇳🇱 Netherlands - 4"
-      - "🇳🇱 Netherlands - 5"
-      - "🇳🇱 Netherlands - 6"
-      - "🇳🇱 Netherlands - 7"
-      - "🇳🇱 Netherlands - 8"
-      - "🇳🇱 Netherlands - 9"
-      - "🇳🇱 Netherlands - 10"
-      - "🇳🇱 Netherlands - 11"
-      - "🇳🇱 Netherlands - 12"
-      - "🇳🇱 Netherlands - 13"
-      - "🇳🇱 Netherlands - 14"
-      - "🇳🇱 Netherlands - 15"
-      - "🇺🇸 United States - 16"
-      - "🇺🇸 United States - 17"
-      - "🇺🇸 United States - 18"
-      - "🇺🇸 United States - 19"
-      - "🇺🇸 United States - 20"
+      - "🇳🇱 Netherlands 1"
+      - "🇳🇱 Netherlands 2"
+      - "🇳🇱 Netherlands 3"
+      - "🇳🇱 Netherlands 4"
+      - "🇳🇱 Netherlands 5"
+      - "🇳🇱 Netherlands 6 (IPv6)"
+      - "🇳🇱 Netherlands 7"
+      - "🇳🇱 Netherlands 8"
+      - "🇳🇱 Netherlands 9"
+      - "🇳🇱 Netherlands 10"
+      - "🇳🇱 Netherlands 11"
+      - "🇳🇱 Netherlands 12"
+      - "🇳🇱 Netherlands 13"
+      - "🇳🇱 Netherlands 14"
+      - "🇳🇱 Netherlands 15"
+      - "🇺🇸 United States 1"
+      - "🇺🇸 United States 2"
+      - "🇺🇸 United States 3"
+      - "🇺🇸 United States 4"
+      - "🇺🇸 United States 5"
+      - "🇺🇸 United States 6"
+      - "🇺🇸 United States 7"
+      - "🇯🇵 Japan 1"
+      - "🇯🇵 Japan 2"
+      - "🇯🇵 Japan 3"
 
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
@@ -670,24 +727,31 @@ proxy-groups:
     interval: 600
     tolerance: 100
     proxies:
-      - "🇳🇱 Netherlands - 3"
-      - "🇳🇱 Netherlands - 4"
-      - "🇳🇱 Netherlands - 5"
-      - "🇳🇱 Netherlands - 6"
-      - "🇳🇱 Netherlands - 7"
-      - "🇳🇱 Netherlands - 8"
-      - "🇳🇱 Netherlands - 9"
-      - "🇳🇱 Netherlands - 10"
-      - "🇳🇱 Netherlands - 11"
-      - "🇳🇱 Netherlands - 12"
-      - "🇳🇱 Netherlands - 13"
-      - "🇳🇱 Netherlands - 14"
-      - "🇳🇱 Netherlands - 15"
-      - "🇺🇸 United States - 16"
-      - "🇺🇸 United States - 17"
-      - "🇺🇸 United States - 18"
-      - "🇺🇸 United States - 19"
-      - "🇺🇸 United States - 20"
+      - "🇳🇱 Netherlands 1"
+      - "🇳🇱 Netherlands 2"
+      - "🇳🇱 Netherlands 3"
+      - "🇳🇱 Netherlands 4"
+      - "🇳🇱 Netherlands 5"
+      - "🇳🇱 Netherlands 6 (IPv6)"
+      - "🇳🇱 Netherlands 7"
+      - "🇳🇱 Netherlands 8"
+      - "🇳🇱 Netherlands 9"
+      - "🇳🇱 Netherlands 10"
+      - "🇳🇱 Netherlands 11"
+      - "🇳🇱 Netherlands 12"
+      - "🇳🇱 Netherlands 13"
+      - "🇳🇱 Netherlands 14"
+      - "🇳🇱 Netherlands 15"
+      - "🇺🇸 United States 1"
+      - "🇺🇸 United States 2"
+      - "🇺🇸 United States 3"
+      - "🇺🇸 United States 4"
+      - "🇺🇸 United States 5"
+      - "🇺🇸 United States 6"
+      - "🇺🇸 United States 7"
+      - "🇯🇵 Japan 1"
+      - "🇯🇵 Japan 2"
+      - "🇯🇵 Japan 3"
 
 rule-providers:
   ir:
